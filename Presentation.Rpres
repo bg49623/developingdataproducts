@@ -1,0 +1,26 @@
+Presentation
+========================================================
+date: 9/4/18
+autosize: true
+
+MTCars machine learning models Application
+========================================================
+
+This is a machine learning app with the mtcars dataset.
+========================================================
+Goal of the application: Using weight of the dataset, find a way to predict mpg
+========================================================
+Loading in the data...
+```{r}
+data(mtcars)
+head(mtcars)
+mtcars <- na.omit(mtcars)
+```
+
+Plot of the data
+========================================================
+
+```{r, echo=FALSE}
+plot(mtcars$wt, mtcars$mpg)
+```
+This is the dataset that the application will try to make predictions on.
